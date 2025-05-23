@@ -70,7 +70,7 @@ function getURLParam(name) {
 function showDedicationText() { //seguidores
   let text = getURLParam('text');
   if (!text) {
-    text = `Para <b>MARISA AVILA</b><br>:\n\nCuando nos conocimos no sabía que ibas a cambiar mi vida de una manera tan bonita. Tu sonrisa, tu forma de ser y tu pasión en todo lo que haces… todo en ti me hace sentir muy querido y en casa.\n\nGracias por acompañarme en cada paso, por entenderme incluso en silencio, y por llenar mis días de amor.\n\nTe amo más de lo que las palabras pueden expresar.`;  } else {
+    text = `❤️ MARISA AVILA:\n\nCuando nos conocimos no sabía que ibas a cambiar mi vida de una manera tan bonita. Tu sonrisa, tu forma de ser y tu pasión en todo lo que haces… todo en ti me hace sentir muy querido y en casa.\n\nGracias por acompañarme en cada paso, por entenderme incluso en silencio, y por llenar mis días de amor.\n\nTe amo más de lo que las palabras pueden expresar.`;  } else {
     text = decodeURIComponent(text).replace(/\\n/g, '\n');
   }
   const container = document.getElementById('dedication-text');
@@ -101,7 +101,7 @@ function showSignature() {
     dedication.appendChild(signature);
   }
   let firma = getURLParam('firma');
-  signature.textContent = firma ? decodeURIComponent(firma) : "Con amor, José Luis Sánchez";
+  signature.textContent = firma ? decodeURIComponent(firma) : "Con amor, José Luis Sánchez ❤️";
   signature.classList.add('visible');
 }
 

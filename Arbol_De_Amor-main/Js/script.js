@@ -161,7 +161,7 @@ function showCountdown() {
 
     container.innerHTML =
       `Desde el 2 de Noviembre del 2023 llevamos juntos: <b>${days}</b> días<br>` +
-      `y </b> 109 <br> vaquerías`;
+      `y <b>109</b> vaquerías`;
     container.classList.add('visible');
   }
   update();
